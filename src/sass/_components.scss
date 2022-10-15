@@ -1,0 +1,69 @@
+@import "./base";
+
+.btn {
+	@include flex(center, center);
+	font-family: $bodyFont;
+	font-weight: 700;
+
+	&.try-free {
+		min-width: 96px;
+		height: 24px;
+		padding: 0.4rem 2.2rem;
+		font-family: $bodyFont;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		background-color: $white;
+		color: $darkCyan;
+		border-radius: 12px;
+		box-shadow: 0px 2px 7px 0px #00000018;
+		transition: color 0.3s ease-out;
+
+		&:hover {
+			color: $grayishBlue;
+		}
+	}
+
+	&.get-started {
+		max-width: 240px;
+		margin: 0 auto;
+		height: 40px;
+		padding: 1rem 0;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		background-color: $lightPink;
+		color: $white;
+		border-radius: 20px;
+		box-shadow: 2px 3px 6px 1px #ff52c12a;
+		transition: background-color 0.3s ease-out;
+
+		&:hover {
+			background-color: #ff9adb;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.btn {
+		&.try-free,
+		&.get-started {
+			font-size: 1.4rem;
+			line-height: 1.9rem;
+		}
+
+		&.try-free {
+			min-width: 200px;
+			min-height: 48px;
+			padding: 1.6rem 0;
+			border-radius: 24px;
+		}
+
+		&.get-started {
+			max-width: 280px;
+			min-height: 56px;
+			padding: 2rem 0;
+			border-radius: 28px;
+			margin: 0;
+		}
+	}
+}
