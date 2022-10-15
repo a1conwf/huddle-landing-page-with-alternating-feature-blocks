@@ -122,6 +122,14 @@
 			max-width: 800px;
 			margin: 0 auto;
 			top: -150px;
+
+			.btn.get-started {
+				max-width: 400px;
+				min-height: 80px;
+				font-size: 2rem;
+				line-height: 3rem;
+				border-radius: 40px;
+			}
 		}
 
 		//Footer inner
