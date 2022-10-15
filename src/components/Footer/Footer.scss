@@ -25,6 +25,13 @@
 		}
 	}
 
+	&__contact,
+	&__links,
+	&__socials {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__img {
 		width: 100%;
 		max-width: 152px;
@@ -34,8 +41,6 @@
 
 	//Footer contact
 	&__contact {
-		display: flex;
-		flex-direction: column;
 		margin-bottom: 41px;
 
 		li {
@@ -53,8 +58,6 @@
 
 	//Footer links
 	&__links {
-		display: flex;
-		flex-direction: column;
 		margin-bottom: 40px;
 
 		ul li {
@@ -65,15 +68,13 @@
 			}
 		}
 
-		&-list:last-child ul li {
+		&-list:last-child li:last-child {
 			margin-bottom: 0;
 		}
 	}
 
 	//Footer socials
 	&__socials {
-		display: flex;
-		flex-direction: column;
 		text-align: center;
 
 		&-list {
